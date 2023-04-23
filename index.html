@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE Encrypter</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <!--styles-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="logos">
+        <img src="img/Logo.png" alt="logoAlura" class="logoAlura">
+        <a href="https://harleyc0.github.io" target="_blank">
+            <img src="img/Logo_Coco_Azul-png.png" alt="logoCoco'Dev" class="logoCoco">
+        </a>
+    </header>
+
+    <!-- Zona escritura de texto - Central -->
+
+    <div class="encrypter">
+        <h2 id="encrypter__title">Enter text here:</h2>
+        <textarea name="input" id="input"></textarea>
+        <div class="encrypter__info">
+            <p>
+            <div class="encrypter__info_icon"></div> only lowercase letters and no accents</p>
+        </div>
+        <div class="encrypter__containerButtons">
+            <button class="encrypter__buttons encrypter__buttons_encrypt" id="encrypter__buttons_encrypt">Encrypt</button>
+            <button class="encrypter__buttons encrypter__buttons_decrypt" id="encrypter__buttons_decrypt">Decrypt</button>
+        </div>
+    </div>
+
+    <!-- Zona de solucion - Derecha  -->
+
+    <div class="solution">
+        <div class="solution__noMessage" id="solution__noMessage">
+            <img src="img/Muñeco.png" alt="Muñeco" class="solution__noMessage_img">
+            <p class="solution__noMessage_p1">No message was found</p>
+            <p class="solution__noMessage_p2">Enter the text you want to encrypt or decrypt</p>
+        </div>
+        <div class="solution__message" id="solution__message"> 
+            <p class="solution__messageSolve_title" id="titleSolution"></p>
+            <p class="solution__messageSolve" id="messageSolve"></p>
+            <button class="solution__message_button" id="solution__message_button">Copy</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- 
+La letra "e" es convertida para "enter"
+La letra "i" es convertida para "imes"
+La letra "a" es convertida para "ai"
+La letra "o" es convertida para "ober"
+La letra "u" es convertida para "ufat" 
+
+Requisitos:
+
+1. Debe funcionar solo con letras minúsculas
+2. No deben ser utilizados letras con acentos ni caracteres especiales
+3. Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+4. La página debe tener campos para inserción del texto que será encriptado o desencriptado, 
+    y el usuario debe poder escoger entre as dos opciones.
+5. El resultado debe ser mostrado en la pantalla. 
+6. Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, 
+    o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+-->
+
+<!-- 
+Tareas pendientes:
+mirar tema de las alturas de los botones
+corregir el texto que se sale cuando es bastante texto en el solve
+funcionalidad del button Copy
+responsive 
+-->

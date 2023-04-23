@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f5fc;
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    font-family: "Inter", sans-serif;
+}
+
+/* Zona Izq - Logos */
+
+.logos {
+    width: 10%;
+    height: 100vh;
+}
+
+.logoAlura {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.logoCoco {
+    width: 60px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+/* Zona Central - Encriptador */
+
+.encrypter {
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 150px;
+    position: relative;
+}
+
+.encrypter h2 {
+    color: rgba(10, 56, 113, 255);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.encrypter textarea {
+    border: none;
+    width: 90%;
+    height: 50vh;
+    background-color: #f3f5fc;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0a3871;
+    margin-top: 20px;
+}
+
+.encrypter__info {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 10px 0;
+    color: rgb(138, 138, 138);
+}
+
+.encrypter__info_icon {
+    width: 12px;
+    height: 12px;
+    background: url("https://api.iconify.design/bi/exclamation-circle-fill.svg")
+        no-repeat center center / contain;
+    color: #495057;
+}
+
+.encrypter__containerButtons {
+    position: absolute;
+    bottom: 80px;
+}
+
+.encrypter__buttons {
+    width: 280px;
+    height: 60px;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+.encrypter__buttons_encrypt {
+    color: white;
+    background-color: #0a3871;
+}
+
+.encrypter__buttons_decrypt {
+    background-color: #d8dfe8;
+    border: solid 1px;
+    border-color: #0a3871;
+    color: #0a3871;
+}
+
+/* Zona Derecha - Solve */
+
+.solution {
+    width: 30%;
+    background-color: white;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.solution__noMessage {
+    margin: auto;
+}
+
+.solution__noMessage_img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.solution__noMessage_p1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #343a40;
+    font-weight: 700;
+}
+
+.solution__noMessage_p2 {
+    font-size: 15px;
+    color: #495057;
+    font-weight: 400;
+}
+
+.solution__message {
+    height: 90%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solution__messageSolve_title {
+    margin: 20px;
+}
+
+.solution__message_button {
+    width: 280px;
+    height: 60px;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+    position: absolute;
+    bottom: 0;
+}
